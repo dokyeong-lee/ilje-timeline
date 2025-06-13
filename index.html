@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>일제강점기 연표</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .timeline {
+      border-left: 3px solid #333;
+      padding-left: 20px;
+    }
+    .event {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .event:hover {
+      color: blue;
+    }
+    #detailBox {
+      margin-top: 30px;
+      border-top: 1px solid #aaa;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🇰🇷 일제강점기 주요 사건 연표</h1>
+
+  <div class="timeline">
+<div class="event" onclick="showEventDetail('일제의 국권 침탈, 조선 총독부 설치')">📅 1910 - 일제의 국권 침탈, 조선 총독부 설치</div>
+<div class="event" onclick="showEventDetail('덕수궁 석조전 완공')">📅 1910 - 덕수궁 석조전 완공</div>
+<div class="event" onclick="showEventDetail('회사령 공포')">📅 1910 - 회사령 공포</div>
+<div class="event" onclick="showEventDetail('토지 조사 사업(~1918년)')">📅 1910 - 토지 조사 사업(~1918년)</div>
+<div class="event" onclick="showEventDetail('홍범도 등 연해주 의병 국내 진격 작전')">📅 1910 - 홍범도 등 연해주 의병 국내 진격 작전</div>
+<div class="event" onclick="showEventDetail('조선 총독부, 토지 조사령 공포')">📅 1912 - 조선 총독부, 토지 조사령 공포</div>
+<div class="event" onclick="showEventDetail('조선 태형령 시행')">📅 1912 - 조선 태형령 시행</div>
+<div class="event" onclick="showEventDetail('임병찬, 독립 의군부 조직')">📅 1912 - 임병찬, 독립 의군부 조직</div>
+<div class="event" onclick="showEventDetail('박용만, 하와이에서 대조선 국민 군단 조직')">📅 1914 - 박용만, 하와이에서 대조선 국민 군단 조직</div>
+<div class="event" onclick="showEventDetail('이상설, 대한 광복군 정부 수립')">📅 1914 - 이상설, 대한 광복군 정부 수립</div>
+<div class="event" onclick="showEventDetail('호남선·경원선 철도 개통')">📅 1914 - 호남선·경원선 철도 개통</div>
+<div class="event" onclick="showEventDetail('대한 광복회 조직')">📅 1915 - 대한 광복회 조직</div>
+<div class="event" onclick="showEventDetail('이동휘 등, 한인사회당 결성(사회주의 정당)')">📅 1918 - 이동휘 등, 한인사회당 결성(사회주의 정당)</div>
+<div class="event" onclick="showEventDetail('여운형 등, 신한청년당 결성(항일 독립운동 단체)')">📅 1918 - 여운형 등, 신한청년당 결성(항일 독립운동 단체)</div>
+<div class="event" onclick="showEventDetail('2·8 독립 선언')">📅 1919 - 2·8 독립 선언</div>
+<div class="event" onclick="showEventDetail('3·1 운동')">📅 1919 - 3·1 운동</div>
+<div class="event" onclick="showEventDetail('대한민국 임시 정부 수립(상하이)')">📅 1919 - 대한민국 임시 정부 수립(상하이)</div>
+<div class="event" onclick="showEventDetail('의열단 조직')">📅 1919 - 의열단 조직</div>
+<div class="event" onclick="showEventDetail('한국인이 처음으로 영화 제작')">📅 1919 - 한국인이 처음으로 영화 제작</div>
+<div class="event" onclick="showEventDetail('〈조선일보〉·〈동아일보〉 창간')">📅 1920 - 〈조선일보〉·〈동아일보〉 창간</div>
+<div class="event" onclick="showEventDetail('조선교육회 설립')">📅 1920 - 조선교육회 설립</div>
+<div class="event" onclick="showEventDetail('6월, 봉오동 전투(홍범도)')">📅 1920 - 6월, 봉오동 전투(홍범도)</div>
+<div class="event" onclick="showEventDetail('10월, 청산리 대첩(김좌진, 홍범도)')">📅 1920 - 10월, 청산리 대첩(김좌진, 홍범도)</div>
+<div class="event" onclick="showEventDetail('10월, 간도 참변 발생')">📅 1920 - 10월, 간도 참변 발생</div>
+<div class="event" onclick="showEventDetail('조만식, 조선 물산 장려회 조직')">📅 1920 - 조만식, 조선 물산 장려회 조직</div>
+<div class="event" onclick="showEventDetail('자유시 참변')">📅 1921 - 자유시 참변</div>
+<div class="event" onclick="showEventDetail('조선어 연구회 설립')">📅 1921 - 조선어 연구회 설립</div>
+<div class="event" onclick="showEventDetail('이광수, 〈민족 개조론〉 발표')">📅 1922 - 이광수, 〈민족 개조론〉 발표</div>
+<div class="event" onclick="showEventDetail('어린이날 제정')">📅 1922 - 어린이날 제정</div>
+<div class="event" onclick="showEventDetail('암태도 소작 쟁의( ~1924년)')">📅 1923 - 암태도 소작 쟁의( ~1924년)</div>
+<div class="event" onclick="showEventDetail('민립 대학 설립 운동')">📅 1923 - 민립 대학 설립 운동</div>
+<div class="event" onclick="showEventDetail('조선 물산 장려회 창립(물산 장려 운동 활발히 전개)')">📅 1923 - 조선 물산 장려회 창립(물산 장려 운동 활발히 전개)</div>
+<div class="event" onclick="showEventDetail('참의부 조직')">📅 1924 - 참의부 조직</div>
+<div class="event" onclick="showEventDetail('정의부 조직')">📅 1924 - 정의부 조직</div>
+<div class="event" onclick="showEventDetail('경성 제국 대학 설립')">📅 1924 - 경성 제국 대학 설립</div>
+<div class="event" onclick="showEventDetail('신민부 조직')">📅 1925 - 신민부 조직</div>
+<div class="event" onclick="showEventDetail('조선 공산당 결성')">📅 1925 - 조선 공산당 결성</div>
+<div class="event" onclick="showEventDetail('6·10 만세 운동')">📅 1926 - 6·10 만세 운동</div>
+<div class="event" onclick="showEventDetail('나석주, 동양 척식 주식ᕴ와 조선 식산 은에 폭탄 투척')">📅 1926 - 나석주, 동양 척식 주식ᕴ와 조선 식산 은에 폭탄 투척</div>
+<div class="event" onclick="showEventDetail('신간회 창립')">📅 1927 - 신간회 창립</div>
+<div class="event" onclick="showEventDetail('근우회 창립')">📅 1927 - 근우회 창립</div>
+<div class="event" onclick="showEventDetail('라디오 방송 시작')">📅 1927 - 라디오 방송 시작</div>
+<div class="event" onclick="showEventDetail('원산 총파업( ~1929)')">📅 1928 - 원산 총파업( ~1929)</div>
+<div class="event" onclick="showEventDetail('광주 학생 항일 운동')">📅 1929 - 광주 학생 항일 운동</div>
+<div class="event" onclick="showEventDetail('일제의 만주 침략(만주사변)')">📅 1931 - 일제의 만주 침략(만주사변)</div>
+<div class="event" onclick="showEventDetail('신간회 해소')">📅 1931 - 신간회 해소</div>
+<div class="event" onclick="showEventDetail('조선어 연구회, 조선어 학회로 개칭')">📅 1931 - 조선어 연구회, 조선어 학회로 개칭</div>
+<div class="event" onclick="showEventDetail('김구, 한인 애국단 조직')">📅 1931 - 김구, 한인 애국단 조직</div>
+<div class="event" onclick="showEventDetail('〈동아일보〉, 브나로드 운동 전개( ~1934)')">📅 1931 - 〈동아일보〉, 브나로드 운동 전개( ~1934)</div>
+<div class="event" onclick="showEventDetail('이봉창, 일왕 폭살 시도')">📅 1932 - 이봉창, 일왕 폭살 시도</div>
+<div class="event" onclick="showEventDetail('윤봉길, 홍커우 공원 의거')">📅 1932 - 윤봉길, 홍커우 공원 의거</div>
+<div class="event" onclick="showEventDetail('조선 혁명과 한국 독립이 한·중 연합군 조직')">📅 1932 - 조선 혁명과 한국 독립이 한·중 연합군 조직</div>
+<div class="event" onclick="showEventDetail('한글 맞춤법 통일안 제정')">📅 1933 - 한글 맞춤법 통일안 제정</div>
+<div class="event" onclick="showEventDetail('조선 총독부, 농촌 진흥 운동 시작')">📅 1933 - 조선 총독부, 농촌 진흥 운동 시작</div>
+<div class="event" onclick="showEventDetail('조선 농지령 공포')">📅 1934 - 조선 농지령 공포</div>
+<div class="event" onclick="showEventDetail('진단 학회 조직')">📅 1934 - 진단 학회 조직</div>
+<div class="event" onclick="showEventDetail('안재홍 등, 조선학 운동 전개')">📅 1934 - 안재홍 등, 조선학 운동 전개</div>
+<div class="event" onclick="showEventDetail('민족 혁명당 결성')">📅 1935 - 민족 혁명당 결성</div>
+<div class="event" onclick="showEventDetail('한국 국민당 결성')">📅 1935 - 한국 국민당 결성</div>
+<div class="event" onclick="showEventDetail('손기정, 베를린 올림픽 대회 마라톤 우승. 〈동아일보〉 일장기 말살 사건')">📅 1936 - 손기정, 베를린 올림픽 대회 마라톤 우승. 〈동아일보〉 일장기 말살 사건</div>
+<div class="event" onclick="showEventDetail('연해주 동포, 중앙아시아로 강제 이주')">📅 1937 - 연해주 동포, 중앙아시아로 강제 이주</div>
+<div class="event" onclick="showEventDetail('중일 전쟁 시작. 황국 신민의 서사 제정')">📅 1937 - 중일 전쟁 시작. 황국 신민의 서사 제정</div>
+<div class="event" onclick="showEventDetail('신사 참배 강요. 화신 백화점 개점')">📅 1937 - 신사 참배 강요. 화신 백화점 개점</div>
+<div class="event" onclick="showEventDetail('한글 교육 금지')">📅 1938 - 한글 교육 금지</div>
+<div class="event" onclick="showEventDetail('국가 총동원법 공포')">📅 1938 - 국가 총동원법 공포</div>
+<div class="event" onclick="showEventDetail('김원봉, 조선의용대 조직')">📅 1938 - 김원봉, 조선의용대 조직</div>
+<div class="event" onclick="showEventDetail('국민 징용령 공포. 1945년까지 45만 명 연행')">📅 1939 - 국민 징용령 공포. 1945년까지 45만 명 연행</div>
+<div class="event" onclick="showEventDetail('일제식 성명 강요 실시 (창씨개명)')">📅 1940 - 일제식 성명 강요 실시 (창씨개명)</div>
+<div class="event" onclick="showEventDetail('한국 독립당 창당')">📅 1940 - 한국 독립당 창당</div>
+<div class="event" onclick="showEventDetail('임시정부, 한국광복군 창설')">📅 1940 - 임시정부, 한국광복군 창설</div>
+<div class="event" onclick="showEventDetail('〈조선일보〉·〈동아일보〉 폐간')">📅 1940 - 〈조선일보〉·〈동아일보〉 폐간</div>
+<div class="event" onclick="showEventDetail('대한민국 임시 정부, 건국 강령 발표 및 대일 선전 포고')">📅 1941 - 대한민국 임시 정부, 건국 강령 발표 및 대일 선전 포고</div>
+<div class="event" onclick="showEventDetail('조선의용대, 한국광복군에 편입')">📅 1942 - 조선의용대, 한국광복군에 편입</div>
+<div class="event" onclick="showEventDetail('조선어 학회 사건')">📅 1942 - 조선어 학회 사건</div>
+<div class="event" onclick="showEventDetail('서울 인구 100만 명을 넘어섬')">📅 1942 - 서울 인구 100만 명을 넘어섬</div>
+<div class="event" onclick="showEventDetail('일제, 징병제·학도 지원병제 실시로 조선 청년을 일본군으로 끌고 감')">📅 1943 - 일제, 징병제·학도 지원병제 실시로 조선 청년을 일본군으로 끌고 감</div>
+<div class="event" onclick="showEventDetail('조선 총독부, 여자 정신대 근무령 공포 및 시행')">📅 1944 - 조선 총독부, 여자 정신대 근무령 공포 및 시행</div>
+<div class="event" onclick="showEventDetail('여운형, 건국 동맹 결성')">📅 1944 - 여운형, 건국 동맹 결성</div>
+<div class="event" onclick="showEventDetail('8·15 해방')">📅 1945 - 8·15 해방</div>
+<div class="event" onclick="showEventDetail('여운형, 조선 건국 준비 위원회 발족')">📅 1945 - 여운형, 조선 건국 준비 위원회 발족</div>
+<div class="event" onclick="showEventDetail('미소 군정 실시')">📅 1945 - 미소 군정 실시</div>
+<div class="event" onclick="showEventDetail('모스크바 3국 외상 회의 개최')">📅 1945 - 모스크바 3국 외상 회의 개최</div>
+<div class="event" onclick="showEventDetail('신탁 통치 반대 운동 일어남')">📅 1945 - 신탁 통치 반대 운동 일어남</div>
+  </div>
+
+  <div id="detailBox"></div>
+
+  <script src="events.js"></script>
+  <script>
+    function showEventDetail(name) {
+      const event = events[name];
+      if (!event) {
+        alert("정보를 찾을 수 없습니다.");
+        return;
+      }
+      const activistLinks = event.activists.map(person =>
+        `<a href="#" onclick="showActivist('${person}')">${person}</a>`
+      ).join(", ");
+      document.getElementById("detailBox").innerHTML = `
+        <h2>${name}</h2>
+        <p>${event.description || "설명이 등록되지 않았습니다."}</p>
+        <p><strong>관련 독립운동가:</strong> ${activistLinks || "정보 없음"}</p>
+        <p><a href="${event.link}" target="_blank">${event.link ? "🔗 국사편찬위원회 링크" : "링크 없음"}</a></p>
+      `;
+    }
+
+    function showActivist(name) {
+      alert(name + "에 대한 정보는 추후 추가될 예정입니다.");
+    }
+  </script>
+
+</body>
+</html>
