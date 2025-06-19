@@ -2,23 +2,35 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>일제강점기 연표</title>
+  <title>일제강점기 연표 (가로 버전)</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
     }
+
     .timeline {
-      border-left: 3px solid #333;
-      padding-left: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 10px 0;
     }
+
     .event {
-      margin-bottom: 10px;
+      padding: 10px 15px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      white-space: nowrap;
       cursor: pointer;
+      flex: 0 0 auto;
+      border: 1px solid #ccc;
     }
+
     .event:hover {
-      color: blue;
+      background-color: #cce5ff;
     }
+
     #detailBox {
       margin-top: 30px;
       border-top: 1px solid #aaa;
@@ -28,10 +40,10 @@
 </head>
 <body>
 
-  <h1>🇰🇷 일제강점기 주요 사건 연표</h1>
+  <h1>🇰🇷 일제강점기 주요 사건 연표 (가로형)</h1>
 
   <div class="timeline">
-<div class="event" onclick="showEventDetail('일제의 국권 침탈, 조선 총독부 설치')">📅 1910 - 일제의 국권 침탈, 조선 총독부 설치</div>
+    <div class="event" onclick="showEventDetail('일제의 국권 침탈, 조선 총독부 설치')">📅 1910 - 일제의 국권 침탈, 조선 총독부 설치</div>
 <div class="event" onclick="showEventDetail('덕수궁 석조전 완공')">📅 1910 - 덕수궁 석조전 완공</div>
 <div class="event" onclick="showEventDetail('회사령 공포')">📅 1910 - 회사령 공포</div>
 <div class="event" onclick="showEventDetail('토지 조사 사업(~1918년)')">📅 1910 - 토지 조사 사업(~1918년)</div>
