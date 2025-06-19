@@ -47,5 +47,49 @@ const events = {
       "윤봉길"
     ],
     "link": "https://contents.history.go.kr/front/hm/view.do?treeId=010102&tabId=01&levelId=hm_114_0040_0070_0020"
+  },
+  "이봉창, 일왕 폭살 시도": {
+    "description": "1932년 한인애국단의 이봉창 의사가 도쿄에서 일본 천황을 향해 폭탄을 던져 일본에 큰 충격을 준 사건입니다.",
+    "activists": [
+      "이봉창"
+    ],
+    "link": "https://contents.history.go.kr/front/hm/view.do?treeId=010102&tabId=01&levelId=hm_114_0040_0070_0010"
+  },
+  "신간회 창립": {
+    "description": "1927년 비타협적 민족주의 세력과 사회주의 세력이 연합하여 조직한 최대 규모의 항일 민족운동 단체입니다.",
+    "activists": [
+      "안재홍",
+      "여운형"
+    ],
+    "link": "https://contents.history.go.kr/front/hm/view.do?treeId=010102&tabId=01&levelId=hm_114_0040_0050_0010"
+  },
+  "6·10 만세 운동": {
+    "description": "1926년 순종의 장례일에 맞춰 학생들이 중심이 되어 일으킨 항일 만세운동입니다.",
+    "activists": [
+      "나석주",
+      "학생운동가들"
+    ],
+    "link": "https://contents.history.go.kr/front/hm/view.do?treeId=010102&tabId=01&levelId=hm_114_0040_0040_0010"
+  },
+  "광주 학생 항일 운동": {
+    "description": "1929년 광주에서 시작된 학생들의 항일운동으로, 3·1 운동 이후 최대 규모의 민족운동이었습니다.",
+    "activists": [
+      "학생운동가들"
+    ],
+    "link": "https://contents.history.go.kr/front/hm/view.do?treeId=010102&tabId=01&levelId=hm_114_0040_0050_0030"
+  },
+  "한국광복군 창설": {
+    "description": "1940년 대한민국 임시정부가 중국 충칭에서 창설한 정규 독립군 부대입니다.",
+    "activists": [
+      "지청천",
+      "김원봉",
+      "김구"
+    ],
+    "link": "https://contents.history.go.kr/front/hm/view.do?treeId=010102&tabId=01&levelId=hm_114_0040_0070_0030"
+  },
+  "8·15 해방": {
+    "description": "1945년 8월 15일, 일본의 무조건 항복으로 조선이 광복을 맞이한 날입니다.",
+    "activists": [],
+    "link": "https://contents.history.go.kr/front/hm/view.do?treeId=010102&tabId=01&levelId=hm_114_0040_0070_0050"
   }
 };
